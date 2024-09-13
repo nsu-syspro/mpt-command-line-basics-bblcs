@@ -1,1 +1,1 @@
-cat "$(find . | grep foo.txt)" "$(find . | grep bar.txt)"  "$(find . | grep baz.txt)"
+cat $(find . -name foo.txt -type f) $(find . -name bar.txt -type f)  $(find . -name baz.txt -type f)
